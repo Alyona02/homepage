@@ -261,3 +261,37 @@ body {
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
+
+.cat__wrapper {
+    position: relative;
+    height: 200px;
+}
+
+.cat {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 70px;
+}
+.cat img {
+    position: absolute;
+    width: 50%;
+    clip: rect(0,200px,100px,0);
+    top: -30px;
+    transition: 0.8s;
+}
+.cat .cat__question {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    background: #ffe4ba;
+    border:2px solid #000;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: 'EDO SZ';
+}
+.cat:hover img {
+    top: -100px;
+}
